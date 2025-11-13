@@ -1,5 +1,8 @@
-src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o: \
- ../src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c \
+src/hw/driver/led.o: ../src/hw/driver/led.c \
+ C:/Users/SSAFY/Desktop/stm32_f103rb_Fw/STM32-f103RB/stm32f103_fw/src/common/hw/Include/led.h \
+ C:/Users/SSAFY/Desktop/stm32_f103rb_Fw/STM32-f103RB/stm32f103_fw/src/hw/hw_def.h \
+ C:/Users/SSAFY/Desktop/stm32_f103rb_Fw/STM32-f103RB/stm32f103_fw/src/common/def.h \
+ C:/Users/SSAFY/Desktop/stm32_f103rb_Fw/STM32-f103RB/stm32f103_fw/src/bsp/bsp.h \
  C:/Users/SSAFY/Desktop/stm32_f103rb_Fw/STM32-f103RB/stm32f103_fw/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
  C:/Users/SSAFY/Desktop/stm32_f103rb_Fw/STM32-f103RB/stm32f103_fw/src/bsp/stm32f1xx_hal_conf.h \
  C:/Users/SSAFY/Desktop/stm32_f103rb_Fw/STM32-f103RB/stm32f103_fw/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
@@ -23,6 +26,10 @@ src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o: \
  C:/Users/SSAFY/Desktop/stm32_f103rb_Fw/STM32-f103RB/stm32f103_fw/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
  C:/Users/SSAFY/Desktop/stm32_f103rb_Fw/STM32-f103RB/stm32f103_fw/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
  C:/Users/SSAFY/Desktop/stm32_f103rb_Fw/STM32-f103RB/stm32f103_fw/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
+C:/Users/SSAFY/Desktop/stm32_f103rb_Fw/STM32-f103RB/stm32f103_fw/src/common/hw/Include/led.h:
+C:/Users/SSAFY/Desktop/stm32_f103rb_Fw/STM32-f103RB/stm32f103_fw/src/hw/hw_def.h:
+C:/Users/SSAFY/Desktop/stm32_f103rb_Fw/STM32-f103RB/stm32f103_fw/src/common/def.h:
+C:/Users/SSAFY/Desktop/stm32_f103rb_Fw/STM32-f103RB/stm32f103_fw/src/bsp/bsp.h:
 C:/Users/SSAFY/Desktop/stm32_f103rb_Fw/STM32-f103RB/stm32f103_fw/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:
 C:/Users/SSAFY/Desktop/stm32_f103rb_Fw/STM32-f103RB/stm32f103_fw/src/bsp/stm32f1xx_hal_conf.h:
 C:/Users/SSAFY/Desktop/stm32_f103rb_Fw/STM32-f103RB/stm32f103_fw/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h:

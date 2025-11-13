@@ -10,6 +10,7 @@ RM := rm -rf
 # All of the sources participating in the build are defined here
 -include sources.mk
 -include src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Src/subdir.mk
+-include src/hw/driver/subdir.mk
 -include src/hw/subdir.mk
 -include src/bsp/startup/subdir.mk
 -include src/bsp/subdir.mk
@@ -63,8 +64,8 @@ all: main-build
 main-build: stm32f103_fw.elf secondary-outputs
 
 # Tool invocations
-stm32f103_fw.elf stm32f103_fw.map: $(OBJS) $(USER_OBJS) /Users/maseungmin/Downloads/STM32-f103RB-main/stm32f103_fw/src/bsp/ldscript/STM32F103RBTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "stm32f103_fw.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"/Users/maseungmin/Downloads/STM32-f103RB-main/stm32f103_fw/src/bsp/ldscript/STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f103_fw.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+stm32f103_fw.elf stm32f103_fw.map: $(OBJS) $(USER_OBJS) C:\Users\SSAFY\Desktop\stm32_f103rb_Fw\STM32-f103RB\stm32f103_fw\src\bsp\ldscript\STM32F103RBTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "stm32f103_fw.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\SSAFY\Desktop\stm32_f103rb_Fw\STM32-f103RB\stm32f103_fw\src\bsp\ldscript\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f103_fw.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
